@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-tidy",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "ESLint shareable config for Tidy style.",
   "homepage": "https://github.com/sholladay/eslint-config-tidy",
   "main": "index.js",
