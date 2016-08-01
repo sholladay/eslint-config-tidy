@@ -14,7 +14,7 @@ module.exports = {
         // Best Practices
 
         complexity : ['error', 16],
-        'consistent-return' : ['error'],
+        'consistent-return' : ['warn'],
         'no-empty-function' : ['error'],
         'no-invalid-this' : ['error'],
         'no-param-reassign' : ['error'],
@@ -43,7 +43,8 @@ module.exports = {
         'global-require' : ['error'],
         'handle-callback-err' : ['error'],
         'no-process-env' : ['error'],
-        'no-process-exit' : ['error'],
+        // Relying upon XO for this. See: https://github.com/sindresorhus/eslint-plugin-xo/blob/master/docs/rules/no-process-exit.md
+        // 'no-process-exit' : ['error'],
         'no-sync' : ['error'],
 
         // Stylistic Issues
