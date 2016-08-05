@@ -42,7 +42,7 @@ module.exports = {
         'callback-return' : ['error'],
         'global-require' : ['error'],
         'handle-callback-err' : ['error'],
-        'no-process-env' : ['error'],
+        'no-process-env' : ['warn'],
         // Relying upon XO for this. See: https://github.com/sindresorhus/eslint-plugin-xo/blob/master/docs/rules/no-process-exit.md
         // 'no-process-exit' : ['error'],
         'no-sync' : ['error'],
