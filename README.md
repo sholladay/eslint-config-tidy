@@ -1,4 +1,4 @@
-# eslint-config-tidy
+# eslint-config-tidy [![Build status for eslint-config-tidy on Circle CI.](https://img.shields.io/circleci/project/sholladay/eslint-config-tidy/master.svg "Circle Build Status")](https://circleci.com/gh/sholladay/eslint-config-tidy "ESLint Config Tidy Builds")
 
 > ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html) for Tidy style.
 
