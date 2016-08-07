@@ -10,7 +10,7 @@
     "email": "me@seth-holladay.com"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "xo"
   },
   "repository": {
     "type": "git",
@@ -20,12 +20,19 @@
     "url": "https://github.com/sholladay/eslint-config-tidy/issues",
     "email": "me@seth-holladay.com"
   },
+  "engines": {
+    "node": ">=6"
+  },
   "license": "MPL-2.0",
   "files": [
     "index.js"
   ],
   "dependencies": {
     "eslint-config-xo": "^0.15.2"
+  },
+  "devDependencies": {
+    "eslint-config-tidy": "file:.",
+    "xo": "0.16.0"
   },
   "keywords": [
     "❤️",
@@ -57,5 +64,8 @@
     "enforce",
     "hint",
     "simple"
-  ]
+  ],
+  "xo": {
+    "extend": "tidy"
+  }
 }
