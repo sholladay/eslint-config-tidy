@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "eslint-config-tidy": "file:.",
-    "xo": "0.16.0"
+    "xo": "^0.16.0"
   },
   "keywords": [
     "❤️",
