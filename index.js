@@ -68,7 +68,9 @@ module.exports = {
         }],
         'max-depth'                  : ['error'],
         'max-len'                    : ['warn', 100],
-        'max-lines'                  : ['error'],
+        'max-lines'                  : ['error', {
+            max : 300
+        }],
         'max-nested-callbacks'       : ['error', 3],
         'max-params'                 : ['error', 4],
         'max-statements'             : ['error', 30],
@@ -79,7 +81,6 @@ module.exports = {
         'no-plusplus'                : ['error'],
         // See: https://github.com/sindresorhus/eslint-config-xo/issues/27
         // 'object-curly-newline' : ['error'],
-        'babel/object-curly-spacing' : ['error', 'always'],
         'object-curly-spacing'       : ['error', 'always'],
         'object-property-newline'    : ['error'],
         'quote-props'                : ['error', 'as-needed'],
@@ -89,7 +90,6 @@ module.exports = {
         // ECMAScript 6
 
         'arrow-body-style'      : ['error', 'always'],
-        'babel/arrow-parens'    : ['error', 'always'],
         'arrow-parens'          : ['error', 'always'],
         'no-confusing-arrow'    : ['error'],
         'no-var'                : ['error'],
