@@ -22,7 +22,10 @@ module.exports = {
 
         // Strict Mode
 
-        // 'strict' : ['error'],
+        // Unfortunately, XO always parses code as an ES2015 module,
+        // where strict pragma is redundant and triggers an error.
+        // See: https://github.com/sindresorhus/eslint-config-xo/issues/7
+        // strict : ['error'],
 
         // Variables
 
@@ -54,7 +57,18 @@ module.exports = {
             min        : 2,
             max        : 30,
             properties : 'always',
-            exceptions : ['$', 'i', 'x', 'y', 'z']
+            exceptions : [
+                // Cheerio / jQuery.
+                '$',
+                // Counter variable.
+                'i',
+                // AVA test context object.
+                't',
+                // Coordinates.
+                'x',
+                'y',
+                'z'
+            ]
         }],
         'id-match' : ['error', '^[a-zA-Z_$][a-zA-Z\\d]*$'],
         indent     : ['error', 4, {
