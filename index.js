@@ -1,5 +1,7 @@
 'use strict';
 
+const { EOL } = require('os');
+
 module.exports = {
     extends : 'xo',
     rules   : {
@@ -80,6 +82,7 @@ module.exports = {
             align       : 'colon',
             mode        : 'minimum'
         }],
+        'linebreak-style'            : ['error', EOL === '\r\n' ? 'windows' : 'unix'],
         'max-depth'                  : ['error'],
         'max-len'                    : ['warn', 100],
         'max-lines'                  : ['error', {
