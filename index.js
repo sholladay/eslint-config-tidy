@@ -82,6 +82,7 @@ module.exports = {
             align       : 'colon',
             mode        : 'minimum'
         }],
+        // TODO: Use `native` if implemented: https://github.com/eslint/eslint/issues/8596
         'linebreak-style'            : ['error', EOL === '\r\n' ? 'windows' : 'unix'],
         'max-depth'                  : ['error'],
         'max-len'                    : ['warn', 100],
