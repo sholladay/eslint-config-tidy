@@ -2,7 +2,7 @@ import test from 'ava';
 import isPlainObj from 'is-plain-obj';
 import eslint from 'eslint';
 import tempWrite from 'temp-write';
-import tidy from './';
+import tidy from '.';
 
 const hasRule = (errors, ruleId) => {
     return errors.some((err) => {
