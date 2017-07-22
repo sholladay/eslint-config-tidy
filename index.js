@@ -1,7 +1,5 @@
 'use strict';
 
-const { EOL } = require('os');
-
 module.exports = {
     extends : 'xo',
     rules   : {
@@ -21,13 +19,6 @@ module.exports = {
         'no-invalid-this'   : ['error'],
         'no-param-reassign' : ['error'],
         'wrap-iife'         : ['error', 'outside'],
-
-        // Strict Mode
-
-        // Unfortunately, XO always parses code as an ES2015 module,
-        // where strict pragma is redundant and triggers an error.
-        // See: https://github.com/sindresorhus/eslint-config-xo/issues/7
-        // strict : ['error'],
 
         // Variables
 
@@ -82,8 +73,6 @@ module.exports = {
             align       : 'colon',
             mode        : 'minimum'
         }],
-        // TODO: Use `native` if implemented: https://github.com/eslint/eslint/issues/8596
-        'linebreak-style'            : ['error', EOL === '\r\n' ? 'windows' : 'unix'],
         'max-depth'                  : ['error'],
         'max-len'                    : ['warn', 100],
         'max-lines'                  : ['error', {
@@ -102,8 +91,6 @@ module.exports = {
         'object-curly-spacing'       : ['error', 'always'],
         'object-property-newline'    : ['error'],
         'quote-props'                : ['error', 'as-needed'],
-        // JSDoc can be nice, but is sometimes a burden.
-        // 'require-jsdoc' : ['error'],
 
         // ECMAScript 6
 
