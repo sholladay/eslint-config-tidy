@@ -43,10 +43,11 @@ module.exports = {
 
         // Stylistic Issues
 
-        'brace-style'     : ['error', 'stroustrup'],
-        'consistent-this' : ['error'],
-        'func-style'      : ['error'],
-        'id-length'       : ['error', {
+        'brace-style'            : ['error', 'stroustrup'],
+        'consistent-this'        : ['error'],
+        'function-paren-newline' : ['error', 'never'],
+        'func-style'             : ['error'],
+        'id-length'              : ['error', {
             min        : 2,
             max        : 30,
             properties : 'always',
@@ -73,6 +74,8 @@ module.exports = {
             align       : 'colon',
             mode        : 'minimum'
         }],
+        'linebreak-style'            : ['error', 'unix'],
+        'lines-between-class-members': ['error', 'never'],
         'max-depth'                  : ['error'],
         'max-len'                    : ['warn', 100],
         'max-lines'                  : ['error', {
