@@ -1,75 +1,75 @@
 {
-  "name": "eslint-config-tidy",
-  "version": "0.5.0",
-  "description": "ESLint shareable config for Tidy style.",
-  "homepage": "https://github.com/sholladay/eslint-config-tidy",
-  "main": "index.js",
-  "author": {
-    "name": "Seth Holladay",
-    "url": "http://seth-holladay.com",
-    "email": "me@seth-holladay.com"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:sholladay/eslint-config-tidy.git"
-  },
-  "bugs": {
-    "url": "https://github.com/sholladay/eslint-config-tidy/issues",
-    "email": "me@seth-holladay.com"
-  },
-  "engines": {
-    "node": ">=6"
-  },
-  "license": "MPL-2.0",
-  "files": [
-    "index.js"
-  ],
-  "dependencies": {
-    "eslint-config-xo": "^0.18.2"
-  },
-  "devDependencies": {
-    "ava": "^0.21.0",
-    "eslint": "^4.3.0",
-    "eslint-config-tidy": "file:.",
-    "is-plain-obj": "^1.1.0",
-    "temp-write": "^3.3.0",
-    "xo": "^0.18.2"
-  },
-  "keywords": [
-    "❤️",
-    "tidy",
-    "eslintconfig",
-    "config",
-    "xo",
-    "xoxo",
-    "hugs",
-    "kisses",
-    "happy",
-    "happiness",
-    "code",
-    "quality",
-    "style",
-    "lint",
-    "linter",
-    "jscs",
-    "jshint",
-    "jslint",
-    "eslint",
-    "validate",
-    "code style",
-    "standard",
-    "strict",
-    "check",
-    "checker",
-    "verify",
-    "enforce",
-    "hint",
-    "simple"
-  ],
-  "xo": {
-    "extend": "tidy"
-  }
+    "name": "eslint-config-tidy",
+    "version": "0.5.0",
+    "description": "ESLint shareable config for Tidy style",
+    "homepage": "https://github.com/sholladay/eslint-config-tidy",
+    "main": "index.js",
+    "author": {
+        "name": "Seth Holladay",
+        "url": "https://seth-holladay.com",
+        "email": "me@seth-holladay.com"
+    },
+    "scripts": {
+        "test": "xo && ava"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:sholladay/eslint-config-tidy.git"
+    },
+    "bugs": {
+        "url": "https://github.com/sholladay/eslint-config-tidy/issues",
+        "email": "me@seth-holladay.com"
+    },
+    "engines": {
+        "node": ">=6"
+    },
+    "license": "MPL-2.0",
+    "files": [
+        "index.js"
+    ],
+    "dependencies": {
+        "eslint-config-xo": "^0.18.2"
+    },
+    "devDependencies": {
+        "ava": "^0.23.0",
+        "eslint": "^4.3.0",
+        "eslint-config-tidy": "file:.",
+        "is-plain-obj": "^1.1.0",
+        "temp-write": "^3.3.0",
+        "xo": "^0.18.0"
+    },
+    "keywords": [
+        "❤️",
+        "tidy",
+        "eslintconfig",
+        "config",
+        "xo",
+        "xoxo",
+        "hugs",
+        "kisses",
+        "happy",
+        "happiness",
+        "code",
+        "quality",
+        "style",
+        "lint",
+        "linter",
+        "jscs",
+        "jshint",
+        "jslint",
+        "eslint",
+        "validate",
+        "code style",
+        "standard",
+        "strict",
+        "check",
+        "checker",
+        "verify",
+        "enforce",
+        "hint",
+        "simple"
+    ],
+    "xo": {
+        "extend": "tidy"
+    }
 }
