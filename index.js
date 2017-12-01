@@ -77,11 +77,11 @@ module.exports = {
             align       : 'colon',
             mode        : 'minimum'
         }],
-        'linebreak-style'            : ['error', 'unix'],
-        'lines-between-class-members': ['error', 'never'],
-        'max-depth'                  : ['error'],
-        'max-len'                    : ['warn', 100],
-        'max-lines'                  : ['error', {
+        'linebreak-style'             : ['error', 'unix'],
+        'lines-between-class-members' : ['error', 'never'],
+        'max-depth'                   : ['error'],
+        'max-len'                     : ['warn', 100],
+        'max-lines'                   : ['error', {
             max : 300
         }],
         'max-nested-callbacks'       : ['error', 3],
