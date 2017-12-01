@@ -1,7 +1,10 @@
 'use strict';
 
 module.exports = {
-    extends : 'xo',
+    extends : [
+        'eslint:recommended',
+        'xo'
+    ],
     rules   : {
         // Possible Errors
 
