@@ -57,6 +57,8 @@ module.exports = {
             exceptions : [
                 // Cheerio / jQuery.
                 '$',
+                // Toolkit for handlers in hapi.
+                'h',
                 // Counter variable.
                 'i',
                 // AVA test context object.
