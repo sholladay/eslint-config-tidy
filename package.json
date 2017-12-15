@@ -36,7 +36,7 @@
         "eslint-config-tidy": "file:.",
         "is-plain-obj": "^1.1.0",
         "temp-write": "^3.3.0",
-        "xo": "^0.18.0"
+        "xo": "git@github.com:sindresorhus/xo.git#7c77af3cc036bf488f0b5b87e37fad9913e1a5f5"
     },
     "keywords": [
         "❤️",
