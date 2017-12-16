@@ -48,7 +48,6 @@ module.exports = {
 
         'brace-style'            : ['error', 'stroustrup'],
         'consistent-this'        : ['error'],
-        'function-paren-newline' : ['error', 'never'],
         'func-style'             : ['error'],
         'id-length'              : ['error', {
             min        : 2,
