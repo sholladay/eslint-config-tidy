@@ -9,6 +9,7 @@ module.exports = {
         // Possible Errors
 
         'no-cond-assign' : ['error', 'always'],
+        'no-console'     : ['off'],
         'no-empty'       : ['error', {
             allowEmptyCatch : false
         }],
