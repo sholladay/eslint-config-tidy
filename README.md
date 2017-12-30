@@ -44,6 +44,10 @@ Add some ESLint config to your package.json:
 }
 ```
 
+## Related
+
+ - [eslint-config-tidy-react](https://github.com/sholladay/eslint-config-tidy-react) - ESLint shareable config for [React](https://reactjs.org) to be used with this config
+
 ## Contributing
 
 See our [contributing guidelines](https://github.com/sholladay/eslint-config-tidy/blob/master/CONTRIBUTING.md "Guidelines for participating in this project") for more details.
