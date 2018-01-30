@@ -61,6 +61,8 @@ module.exports = {
                 'h',
                 // Counter variable.
                 'i',
+                // RethinkDB client
+                'r',
                 // AVA test context object.
                 't',
                 // Coordinates.
