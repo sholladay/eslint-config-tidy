@@ -55,17 +55,17 @@ module.exports = {
             max        : 30,
             properties : 'always',
             exceptions : [
-                // Cheerio / jQuery.
+                // Cheerio / jQuery
                 '$',
-                // Toolkit for handlers in hapi.
+                // Toolkit for handlers in hapi
                 'h',
-                // Counter variable.
+                // Counter variable
                 'i',
                 // RethinkDB client
                 'r',
-                // AVA test context object.
+                // AVA test context object
                 't',
-                // Coordinates.
+                // Coordinates
                 'x',
                 'y',
                 'z'
