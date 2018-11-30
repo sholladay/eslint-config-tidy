@@ -17,12 +17,13 @@ module.exports = {
 
         // Best Practices
 
-        complexity          : ['error', 16],
-        'consistent-return' : ['warn'],
-        'no-empty-function' : ['error'],
-        'no-invalid-this'   : ['error'],
-        'no-param-reassign' : ['error'],
-        'wrap-iife'         : ['error', 'outside'],
+        complexity               : ['error', 16],
+        'consistent-return'      : ['warn'],
+        'no-empty-function'      : ['error'],
+        'no-invalid-this'        : ['error'],
+        'no-param-reassign'      : ['error'],
+        'require-unicode-regexp' : ['error'],
+        'wrap-iife'              : ['error', 'outside'],
 
         // Variables
 
@@ -50,6 +51,7 @@ module.exports = {
         'brace-style'            : ['error', 'stroustrup'],
         'consistent-this'        : ['error'],
         'func-style'             : ['error'],
+        'function-paren-newline' : ['error', 'consistent'],
         'id-length'              : ['error', {
             min        : 2,
             max        : 30,
@@ -114,6 +116,7 @@ module.exports = {
         'object-shorthand'      : ['error', 'always'],
         'prefer-arrow-callback' : ['error'],
         'prefer-const'          : ['error'],
+        'prefer-object-spread'  : ['error'],
         'prefer-rest-params'    : ['error'],
         'prefer-spread'         : ['error']
         // Simple concats with only one "+" don't benefit.
