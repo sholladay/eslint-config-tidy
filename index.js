@@ -84,7 +84,10 @@ module.exports = {
         'linebreak-style'             : ['error', 'unix'],
         'lines-between-class-members' : ['error', 'never'],
         'max-depth'                   : ['error'],
-        'max-len'                     : ['warn', 100],
+        'max-len'                     : ['warn', {
+            code          : 100,
+            ignoreStrings : true
+        }],
         'max-lines'                   : ['error', {
             max : 300
         }],
