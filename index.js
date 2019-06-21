@@ -17,13 +17,15 @@ module.exports = {
 
         // Best Practices
 
-        complexity               : ['error', 16],
-        'consistent-return'      : 'warn',
-        'no-empty-function'      : 'error',
-        'no-invalid-this'        : 'error',
-        'no-param-reassign'      : 'error',
-        'require-unicode-regexp' : 'error',
-        'wrap-iife'              : ['error', 'outside'],
+        complexity                   : ['error', 16],
+        'consistent-return'          : 'warn',
+        'no-empty-function'          : 'error',
+        'no-invalid-this'            : 'error',
+        'no-param-reassign'          : 'error',
+        'no-useless-catch'           : 'error',
+        'prefer-named-capture-group' : 'error',
+        'require-unicode-regexp'     : 'error',
+        'wrap-iife'                  : ['error', 'outside'],
 
         // Variables
 
@@ -33,10 +35,7 @@ module.exports = {
             allow          : ['resolve', 'reject', 'err']
         }],
         'no-undefined'         : 'error',
-        'no-use-before-define' : ['error', {
-            functions : true,
-            classes   : true
-        }],
+        'no-use-before-define' : 'error',
 
         // Node.js and CommonJS
 
@@ -122,19 +121,18 @@ module.exports = {
                 consistent    : true
             }
         }],
-        'object-curly-spacing'       : ['error', 'always'],
-        'object-property-newline'    : 'error',
-        'quote-props'                : ['error', 'as-needed'],
+        'object-curly-spacing'            : ['error', 'always'],
+        'object-property-newline'         : 'error',
+        'padding-line-between-statements' : 'off',
+        'quote-props'                     : ['error', 'as-needed'],
 
         // ECMAScript 6
 
         'arrow-body-style'           : ['error', 'always'],
         'arrow-parens'               : ['error', 'always'],
         'no-confusing-arrow'         : 'error',
-        'no-useless-catch'           : 'error',
         'prefer-arrow-callback'      : 'error',
         'prefer-const'               : 'error',
-        'prefer-named-capture-group' : 'error',
         'prefer-object-spread'       : 'error'
         // TODO: Research whether this conflicts with XO's use of eslint-plugin-import
         // 'sort-imports' : 'error'
