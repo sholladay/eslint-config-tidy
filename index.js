@@ -3,7 +3,7 @@
 module.exports = {
     extends : [
         'eslint:recommended',
-        'xo'
+        'xo/esnext'
     ],
     rules   : {
         // Possible Errors
@@ -131,15 +131,11 @@ module.exports = {
         'arrow-body-style'           : ['error', 'always'],
         'arrow-parens'               : ['error', 'always'],
         'no-confusing-arrow'         : 'error',
-        'no-var'                     : 'error',
         'no-useless-catch'           : 'error',
-        'object-shorthand'           : ['error', 'always'],
         'prefer-arrow-callback'      : 'error',
         'prefer-const'               : 'error',
         'prefer-named-capture-group' : 'error',
-        'prefer-object-spread'       : 'error',
-        'prefer-rest-params'         : 'error',
-        'prefer-spread'              : 'error'
+        'prefer-object-spread'       : 'error'
         // TODO: Research whether this conflicts with XO's use of eslint-plugin-import
         // 'sort-imports' : 'error'
     }
