@@ -9,20 +9,20 @@ module.exports = {
         // Possible Errors
 
         'no-cond-assign' : ['error', 'always'],
-        'no-console'     : ['off'],
+        'no-console'     : 'off',
         'no-empty'       : ['error', {
             allowEmptyCatch : false
         }],
-        'valid-jsdoc' : ['error'],
+        'valid-jsdoc' : 'error',
 
         // Best Practices
 
         complexity               : ['error', 16],
-        'consistent-return'      : ['warn'],
-        'no-empty-function'      : ['error'],
-        'no-invalid-this'        : ['error'],
-        'no-param-reassign'      : ['error'],
-        'require-unicode-regexp' : ['error'],
+        'consistent-return'      : 'warn',
+        'no-empty-function'      : 'error',
+        'no-invalid-this'        : 'error',
+        'no-param-reassign'      : 'error',
+        'require-unicode-regexp' : 'error',
         'wrap-iife'              : ['error', 'outside'],
 
         // Variables
@@ -32,7 +32,7 @@ module.exports = {
             hoist          : 'functions',
             allow          : ['resolve', 'reject', 'err']
         }],
-        'no-undefined'         : ['error'],
+        'no-undefined'         : 'error',
         'no-use-before-define' : ['error', {
             functions : true,
             classes   : true
@@ -40,17 +40,17 @@ module.exports = {
 
         // Node.js and CommonJS
 
-        'callback-return'     : ['error'],
-        'global-require'      : ['error'],
-        'handle-callback-err' : ['error'],
-        'no-process-env'      : ['warn'],
-        'no-sync'             : ['error'],
+        'callback-return'     : 'error',
+        'global-require'      : 'error',
+        'handle-callback-err' : 'error',
+        'no-process-env'      : 'warn',
+        'no-sync'             : 'error',
 
         // Stylistic Issues
 
         'brace-style'            : ['error', 'stroustrup'],
-        'consistent-this'        : ['error'],
-        'func-style'             : ['error'],
+        'consistent-this'        : 'error',
+        'func-style'             : 'error',
         'function-paren-newline' : ['error', 'consistent'],
         'id-length'              : ['error', {
             min        : 2,
@@ -85,7 +85,7 @@ module.exports = {
         }],
         'linebreak-style'             : ['error', 'unix'],
         'lines-between-class-members' : ['error', 'never'],
-        'max-depth'                   : ['error'],
+        'max-depth'                   : 'error',
         'max-len'                     : ['warn', {
             code          : 100,
             ignoreStrings : true
@@ -97,31 +97,31 @@ module.exports = {
         'max-params'                 : ['error', 4],
         'max-statements'             : ['error', 30],
         // 'newline-per-chained-call' : ['error'],
-        'no-bitwise'                 : ['error'],
-        'no-inline-comments'         : ['warn'],
-        'no-nested-ternary'          : ['error'],
-        'no-plusplus'                : ['error'],
+        'no-bitwise'                 : 'error',
+        'no-inline-comments'         : 'warn',
+        'no-nested-ternary'          : 'error',
+        'no-plusplus'                : 'error',
         // See: https://github.com/sindresorhus/eslint-config-xo/issues/27
         // 'object-curly-newline' : ['error'],
         'object-curly-spacing'       : ['error', 'always'],
-        'object-property-newline'    : ['error'],
+        'object-property-newline'    : 'error',
         'quote-props'                : ['error', 'as-needed'],
 
         // ECMAScript 6
 
         'arrow-body-style'      : ['error', 'always'],
         'arrow-parens'          : ['error', 'always'],
-        'no-confusing-arrow'    : ['error'],
-        'no-var'                : ['error'],
+        'no-confusing-arrow'    : 'error',
+        'no-var'                : 'error',
         'object-shorthand'      : ['error', 'always'],
-        'prefer-arrow-callback' : ['error'],
-        'prefer-const'          : ['error'],
-        'prefer-object-spread'  : ['error'],
-        'prefer-rest-params'    : ['error'],
-        'prefer-spread'         : ['error']
+        'prefer-arrow-callback' : 'error',
+        'prefer-const'          : 'error',
+        'prefer-object-spread'  : 'error',
+        'prefer-rest-params'    : 'error',
+        'prefer-spread'         : 'error'
         // Simple concats with only one "+" don't benefit.
-        // 'prefer-template' : ['error'],
+        // 'prefer-template' : ['error',
         // Need to research whether this conflicts with XO's use of eslint-plugin-import
-        // 'sort-imports' : ['error']
+        // 'sort-imports' : 'error'
     }
 };
