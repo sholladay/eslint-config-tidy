@@ -100,8 +100,28 @@ module.exports = {
         'no-inline-comments'         : 'warn',
         'no-nested-ternary'          : 'error',
         'no-plusplus'                : 'error',
-        // See: https://github.com/sindresorhus/eslint-config-xo/issues/27
-        // 'object-curly-newline' : ['error'],
+        'object-curly-newline'       : ['error', {
+            ObjectExpression : {
+                multiline     : true,
+                minProperties : 2,
+                consistent    : true
+            },
+            ObjectPattern : {
+                multiline     : true,
+                minProperties : 4,
+                consistent    : true
+            },
+            ImportDeclaration : {
+                multiline     : true,
+                minProperties : 4,
+                consistent    : true
+            },
+            ExportDeclaration : {
+                multiline     : true,
+                minProperties : 2,
+                consistent    : true
+            }
+        }],
         'object-curly-spacing'       : ['error', 'always'],
         'object-property-newline'    : 'error',
         'quote-props'                : ['error', 'as-needed'],
