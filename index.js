@@ -96,7 +96,6 @@ module.exports = {
         'max-nested-callbacks'       : ['error', 3],
         'max-params'                 : ['error', 4],
         'max-statements'             : ['error', 30],
-        // 'newline-per-chained-call' : ['error'],
         'no-bitwise'                 : 'error',
         'no-inline-comments'         : 'warn',
         'no-nested-ternary'          : 'error',
@@ -109,19 +108,19 @@ module.exports = {
 
         // ECMAScript 6
 
-        'arrow-body-style'      : ['error', 'always'],
-        'arrow-parens'          : ['error', 'always'],
-        'no-confusing-arrow'    : 'error',
-        'no-var'                : 'error',
-        'object-shorthand'      : ['error', 'always'],
-        'prefer-arrow-callback' : 'error',
-        'prefer-const'          : 'error',
-        'prefer-object-spread'  : 'error',
-        'prefer-rest-params'    : 'error',
-        'prefer-spread'         : 'error'
-        // Simple concats with only one "+" don't benefit.
-        // 'prefer-template' : ['error',
-        // Need to research whether this conflicts with XO's use of eslint-plugin-import
+        'arrow-body-style'           : ['error', 'always'],
+        'arrow-parens'               : ['error', 'always'],
+        'no-confusing-arrow'         : 'error',
+        'no-var'                     : 'error',
+        'no-useless-catch'           : 'error',
+        'object-shorthand'           : ['error', 'always'],
+        'prefer-arrow-callback'      : 'error',
+        'prefer-const'               : 'error',
+        'prefer-named-capture-group' : 'error',
+        'prefer-object-spread'       : 'error',
+        'prefer-rest-params'         : 'error',
+        'prefer-spread'              : 'error'
+        // TODO: Research whether this conflicts with XO's use of eslint-plugin-import
         // 'sort-imports' : 'error'
     }
 };
