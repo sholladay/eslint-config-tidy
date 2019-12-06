@@ -5,7 +5,7 @@ module.exports = {
         'eslint:recommended',
         'xo/esnext'
     ],
-    rules   : {
+    rules : {
         // Possible Errors
 
         'no-cond-assign' : ['error', 'always'],
@@ -89,17 +89,17 @@ module.exports = {
             code          : 100,
             ignoreStrings : true
         }],
-        'max-lines'                   : ['error', {
+        'max-lines' : ['error', {
             max : 300
         }],
-        'max-nested-callbacks'       : ['error', 3],
-        'max-params'                 : ['error', 4],
-        'max-statements'             : ['error', 30],
-        'no-bitwise'                 : 'error',
-        'no-inline-comments'         : 'warn',
-        'no-nested-ternary'          : 'error',
-        'no-plusplus'                : 'error',
-        'object-curly-newline'       : ['error', {
+        'max-nested-callbacks' : ['error', 3],
+        'max-params'           : ['error', 4],
+        'max-statements'       : ['error', 30],
+        'no-bitwise'           : 'error',
+        'no-inline-comments'   : 'warn',
+        'no-nested-ternary'    : 'error',
+        'no-plusplus'          : 'error',
+        'object-curly-newline' : ['error', {
             ObjectExpression : {
                 multiline     : true,
                 minProperties : 2,
@@ -128,12 +128,12 @@ module.exports = {
 
         // ECMAScript 6
 
-        'arrow-body-style'           : ['error', 'always'],
-        'arrow-parens'               : ['error', 'always'],
-        'no-confusing-arrow'         : 'error',
-        'prefer-arrow-callback'      : 'error',
-        'prefer-const'               : 'error',
-        'prefer-object-spread'       : 'error'
+        'arrow-body-style'      : ['error', 'always'],
+        'arrow-parens'          : ['error', 'always'],
+        'no-confusing-arrow'    : 'error',
+        'prefer-arrow-callback' : 'error',
+        'prefer-const'          : 'error',
+        'prefer-object-spread'  : 'error'
         // TODO: Research whether this conflicts with XO's use of eslint-plugin-import
         // 'sort-imports' : 'error'
     }
