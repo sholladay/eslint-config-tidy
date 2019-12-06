@@ -90,3 +90,8 @@ test('allows multi-line object destructuring with four or more properties', (t) 
     const errors = lint('const {\n    foo,\n    bar,\n    baz,\n    blah\n} = console;\nfoo(bar, baz, blah);\n');
     t.deepEqual(errors, []);
 });
+
+test('disallows multiple spaces after colon in object literal', (t) => {
+    const errors = lint('console.log({ bar :  \'baz\' });\n');
+    t.deepEqual(getRules(errors), ['key-spacing']);
+});

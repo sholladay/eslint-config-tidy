@@ -80,7 +80,7 @@ module.exports = {
             beforeColon : true,
             afterColon  : true,
             align       : 'colon',
-            mode        : 'minimum'
+            mode        : 'strict'
         }],
         'linebreak-style'             : ['error', 'unix'],
         'lines-between-class-members' : ['error', 'never'],
