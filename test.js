@@ -28,17 +28,18 @@ test('config is valid', (t) => {
     t.true(Object.keys(tidy.rules).length > 50);
 });
 
-test('no errors for good code', (t) => {
-    const errors = lint('\'use strict\';\nconsole.log(\'unicorn\');\n');
-    t.deepEqual(errors, []);
+test('requires semicolons', (t) => {
+    const bad = 'console.log(\'hello\')\n';
+    const good = 'console.log(\'hello\');\n';
+    t.deepEqual(getRules(lint(bad)), ['semi']);
+    t.deepEqual(lint(good), []);
 });
 
-test('requires single quotes and semicolons', (t) => {
-    const errors = lint('\'use strict\';\nconsole.log("unicorn")\n');
-    t.deepEqual(getRules(errors), [
-        'quotes',
-        'semi'
-    ]);
+test('requires single quotes', (t) => {
+    const bad = 'console.log("hello");\n';
+    const good = 'console.log(\'hello\');\n';
+    t.deepEqual(getRules(lint(bad)), ['quotes']);
+    t.deepEqual(lint(good), []);
 });
 
 test('allows one-line object literal with no properties', (t) => {
