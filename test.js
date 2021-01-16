@@ -2,7 +2,7 @@ import path from 'path';
 import test from 'ava';
 import isPlainObj from 'is-plain-obj';
 import eslint from 'eslint';
-import tidy from '.';
+import tidy from './index.js';
 
 const getRules = (errors) => {
     const ruleIds = errors.map((error) => {
