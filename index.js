@@ -3,7 +3,7 @@
 module.exports = {
     extends : [
         'eslint:recommended',
-        'xo/esnext'
+        'xo'
     ],
     rules : {
         // Possible Errors
@@ -48,6 +48,7 @@ module.exports = {
         // Stylistic Issues
 
         'brace-style'            : ['error', 'stroustrup'],
+        'comma-dangle'           : 'off',
         'consistent-this'        : 'error',
         'func-style'             : 'error',
         'function-paren-newline' : ['error', 'consistent'],
