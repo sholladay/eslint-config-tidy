@@ -123,8 +123,12 @@ module.exports = {
                 consistent    : true
             }
         }],
-        'object-curly-spacing'            : ['error', 'always'],
-        'object-property-newline'         : 'error',
+        'object-curly-spacing'    : ['error', 'always'],
+        'object-property-newline' : 'error',
+        'operator-linebreak'      : [
+            'error',
+            'after',
+        ],
         'padding-line-between-statements' : 'off',
         'quote-props'                     : ['error', 'as-needed'],
 

@@ -96,3 +96,10 @@ test('disallows multiple spaces after colon in object literal', async (t) => {
     const errors = await lint('console.log({ bar :  \'baz\' });\n');
     t.deepEqual(getRules(errors), ['key-spacing']);
 });
+
+test('requires operators next to linebreaks to be at the end of the line', async (t) => {
+    const bad = 'const foo = \'sand\'\n    + \'which\';\nconsole.log(foo);\n';
+    const good = 'const foo = \'sand\' +\n    \'which\';\nconsole.log(foo);\n';
+    t.deepEqual(getRules(await lint(bad)), ['operator-linebreak']);
+    t.deepEqual(await lint(good), []);
+});
