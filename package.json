@@ -4,6 +4,7 @@
     "description": "ESLint shareable config for Tidy style",
     "homepage": "https://github.com/sholladay/eslint-config-tidy",
     "main": "index.js",
+    "type": "module",
     "author": {
         "name": "Seth Holladay",
         "url": "https://seth-holladay.com",
@@ -21,21 +22,21 @@
         "email": "me@seth-holladay.com"
     },
     "engines": {
-        "node": ">=14"
+        "node": ">=20"
     },
     "license": "MPL-2.0",
     "files": [
         "index.js"
     ],
     "dependencies": {
-        "eslint-config-xo": "^0.43.1"
+        "eslint-config-xo": "^0.48.0"
     },
     "devDependencies": {
-        "ava": "^2.0.0",
-        "eslint": "^8.50.0",
+        "ava": "^6.4.1",
+        "eslint": "^9.33.0",
         "eslint-config-tidy": "file:.",
-        "is-plain-obj": "^3.0.0",
-        "xo": "^0.56.0"
+        "is-plain-obj": "^4.1.0",
+        "xo": "^1.2.1"
     },
     "keywords": [
         "❤️",
@@ -67,11 +68,5 @@
         "enforce",
         "hint",
         "simple"
-    ],
-    "xo": {
-        "extend": "tidy",
-        "rules": {
-            "unicorn/prefer-module": "off"
-        }
-    }
+    ]
 }

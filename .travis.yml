@@ -1,8 +1,9 @@
 language: node_js
 
 node_js:
-  - 14
-  - 12
+  - 24
+  - 22
+  - 20
 
 os:
   - linux

@@ -12,8 +12,8 @@ const getRules = (errors) => {
 
 const lint = async (input) => {
     const linter = new ESLint({
-        useEslintrc    : false,
-        overrideConfig : tidy
+        overrideConfig     : tidy,
+        overrideConfigFile : true
     });
 
     const [result] = await linter.lintText(input);
@@ -21,24 +21,24 @@ const lint = async (input) => {
 };
 
 test('config is valid', (t) => {
-    t.true(isPlainObj(tidy));
-    t.true(Array.isArray(tidy.extends));
-    t.true(tidy.extends.length > 1);
-    t.true(isPlainObj(tidy.rules));
-    t.true(Object.keys(tidy.rules).length > 50);
+    t.true(Array.isArray(tidy));
+    t.is(tidy.length, 4);
+    t.true(isPlainObj(tidy[0]));
+    t.true(isPlainObj(tidy[0].rules));
+    t.true(Object.keys(tidy[0].rules).length > 50);
 });
 
 test('requires semicolons', async (t) => {
     const bad = 'console.log(\'hello\')\n';
     const good = 'console.log(\'hello\');\n';
-    t.deepEqual(getRules(await lint(bad)), ['semi']);
+    t.deepEqual(getRules(await lint(bad)), ['@stylistic/semi']);
     t.deepEqual(await lint(good), []);
 });
 
 test('requires single quotes', async (t) => {
     const bad = 'console.log("hello");\n';
     const good = 'console.log(\'hello\');\n';
-    t.deepEqual(getRules(await lint(bad)), ['quotes']);
+    t.deepEqual(getRules(await lint(bad)), ['@stylistic/quotes']);
     t.deepEqual(await lint(good), []);
 });
 
@@ -60,8 +60,8 @@ test('allows multi-line object literal with one property', async (t) => {
 test('disallows one-line object literal with two or more properties', async (t) => {
     const errors = await lint('console.log({ one : 1, two : 2 });\n');
     t.deepEqual(getRules(errors), [
-        'object-curly-newline',
-        'object-property-newline'
+        '@stylistic/object-curly-newline',
+        '@stylistic/object-property-newline'
     ]);
 });
 
@@ -83,7 +83,7 @@ test('allows multi-line object destructuring with three or fewer properties', as
 test('disallows one-line object destructuring with four or more properties', async (t) => {
     const errors = await lint('const { foo, bar, baz, blah } = console;\nfoo(bar, baz, blah);\n');
     t.deepEqual(getRules(errors), [
-        'object-curly-newline'
+        '@stylistic/object-curly-newline'
     ]);
 });
 
@@ -94,12 +94,12 @@ test('allows multi-line object destructuring with four or more properties', asyn
 
 test('disallows multiple spaces after colon in object literal', async (t) => {
     const errors = await lint('console.log({ bar :  \'baz\' });\n');
-    t.deepEqual(getRules(errors), ['key-spacing']);
+    t.deepEqual(getRules(errors), ['@stylistic/key-spacing']);
 });
 
-test('requires operators next to linebreaks to be at the end of the line', async (t) => {
-    const bad = 'const foo = \'sand\'\n    + \'which\';\nconsole.log(foo);\n';
-    const good = 'const foo = \'sand\' +\n    \'which\';\nconsole.log(foo);\n';
-    t.deepEqual(getRules(await lint(bad)), ['operator-linebreak']);
+test('requires operators next to linebreaks to be after the newline', async (t) => {
+    const bad = 'const foo = \'sand\' +\n    \'which\';\nconsole.log(foo);\n';
+    const good = 'const foo = \'sand\'\n    + \'which\';\nconsole.log(foo);\n';
+    t.deepEqual(getRules(await lint(bad)), ['@stylistic/operator-linebreak']);
     t.deepEqual(await lint(good), []);
 });
