@@ -34,7 +34,7 @@ export default [
 
 Add an `eslint.config.js` file to your project:
 
-```json
+```js
 import tidy from 'eslint-config-tidy';
 
 export default [
