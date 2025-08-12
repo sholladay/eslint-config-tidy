@@ -1,4 +1,4 @@
-# eslint-config-tidy [![Build status for ESLint Config Tidy](https://travis-ci.com/sholladay/eslint-config-tidy.svg?branch=master "Build Status")](https://travis-ci.com/sholladay/eslint-config-tidy "Builds")
+# eslint-config-tidy [![Build status for ESLint Config Tidy](https://api.travis-ci.com/sholladay/eslint-config-tidy.svg "Build Status")](https://travis-ci.com/sholladay/eslint-config-tidy "Builds")
 
 > ESLint [shareable config](http://eslint.org/docs/developer-guide/shareable-configs.html) for Tidy style
 
