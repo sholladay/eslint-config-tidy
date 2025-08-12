@@ -20,28 +20,26 @@ All you have to do is tell your linter to use this config.
 
 ### Use with [XO](https://github.com/sindresorhus/xo) (recommended)
 
-Add some XO config to your package.json:
+Add an `xo.config.js` file to your project:
 
-```json
-{
-    "name": "my-awesome-project",
-    "xo": {
-        "extend": "tidy"
-    }
-}
+```js
+import tidy from 'eslint-config-tidy';
+
+export default [
+	...tidy
+];
 ```
 
 ### Alternatively, use with [ESLint](https://github.com/eslint/eslint)
 
-Add some ESLint config to your package.json:
+Add an `eslint.config.js` file to your project:
 
 ```json
-{
-    "name": "my-awesome-project",
-    "eslintConfig": {
-        "extends": "tidy"
-    }
-}
+import tidy from 'eslint-config-tidy';
+
+export default [
+	...tidy
+];
 ```
 
 ## Related
