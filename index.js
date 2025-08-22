@@ -23,7 +23,6 @@ const configs = [
             'consistent-return'          : 'warn',
             'no-empty-function'          : 'error',
             'no-invalid-this'            : 'error',
-            'no-param-reassign'          : 'error',
             'no-useless-catch'           : 'error',
             'prefer-named-capture-group' : 'error',
             'require-unicode-regexp'     : 'error',
@@ -35,7 +34,6 @@ const configs = [
                 hoist          : 'functions',
                 allow          : ['resolve', 'reject', 'err']
             }],
-            'no-undefined'         : 'error',
             'no-use-before-define' : 'error',
 
             // Node.js and CommonJS
