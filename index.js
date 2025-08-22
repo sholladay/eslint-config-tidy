@@ -50,7 +50,7 @@ const configs = [
 
             '@stylistic/arrow-parens'           : ['error', 'always'],
             '@stylistic/brace-style'            : ['error', 'stroustrup'],
-            '@stylistic/comma-dangle'           : 'off',
+            '@stylistic/comma-dangle'           : ['error', 'never'],
             '@stylistic/function-paren-newline' : ['error', 'consistent'],
             '@stylistic/indent'                 : ['error', 4, {
                 SwitchCase : 1
