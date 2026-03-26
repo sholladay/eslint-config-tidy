@@ -1,7 +1,7 @@
 import test from 'ava';
 import isPlainObj from 'is-plain-obj';
 import { ESLint } from 'eslint';
-import tidy from './index.js';
+import tidyEslint from './eslint.js';
 
 const getRules = (errors) => {
     const ruleIds = errors.map((error) => {
@@ -12,20 +12,24 @@ const getRules = (errors) => {
 
 const lint = async (input) => {
     const linter = new ESLint({
-        overrideConfig     : tidy,
+        overrideConfig     : tidyEslint,
         overrideConfigFile : true
     });
 
-    const [result] = await linter.lintText(input);
+    const [result] = await linter.lintText(input, { filePath : 'foo.js' });
     return result.messages;
 };
 
 test('config is valid', (t) => {
-    t.true(Array.isArray(tidy));
-    t.is(tidy.length, 4);
-    t.true(isPlainObj(tidy[0]));
-    t.true(isPlainObj(tidy[0].rules));
-    t.true(Object.keys(tidy[0].rules).length > 50);
+    t.true(Array.isArray(tidyEslint));
+    t.is(tidyEslint.length, 13);
+
+    for (const config of tidyEslint) {
+        t.true(isPlainObj(config));
+        t.true(isPlainObj(config.rules) || Array.isArray(config.ignores));
+    }
+
+    t.true(Object.keys(tidyEslint.at(-1).rules).length > 50);
 });
 
 test('requires semicolons', async (t) => {

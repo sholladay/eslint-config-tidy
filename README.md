@@ -26,7 +26,7 @@ Add an `xo.config.js` file to your project:
 import tidy from 'eslint-config-tidy';
 
 export default [
-	...tidy
+    ...tidy
 ];
 ```
 
@@ -35,10 +35,10 @@ export default [
 Add an `eslint.config.js` file to your project:
 
 ```js
-import tidy from 'eslint-config-tidy';
+import tidy from 'eslint-config-tidy/eslint';
 
 export default [
-	...tidy
+    ...tidy
 ];
 ```
 

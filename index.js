@@ -1,13 +1,6 @@
-import xoConfig from 'eslint-config-xo';
-
-const [jsConfig, ...otherConfigs] = xoConfig;
-
 const configs = [
     {
-        ...jsConfig,
         rules : {
-            ...jsConfig.rules,
-
             // Possible Errors
 
             'no-cond-assign' : ['error', 'always'],
@@ -144,8 +137,7 @@ const configs = [
                 ignoreDeclarationSort : true
             }]
         }
-    },
-    ...otherConfigs
+    }
 ];
 
 export default configs;
